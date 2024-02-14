@@ -1,40 +1,24 @@
-import PropTypes from 'prop-types';
 import Image from "next/image";
-// import styled from '@emotion/styled';
 
-// const A = styled.a`
-//   width: 30%;
-//   max-width: 250px;
-//   #octocat {
-//     width: 30%;
-//   }
-//   img {
-//     width: ${({ compact }) => (compact ? 'calc(86px + 2vmin)' : '60%')};
-//   }
-// `;
-
-const GithubLink = ({ compact = false }) => (
+const GithubLink = () => (
   <a
-    compact={compact}
     href="https://github.com/esantini/eSantini"
     target="_blank"
     rel="noopener noreferrer"
+    style={{ position: 'relative', width: '200px', height: '60px' }}
   >
-    {!compact && (
-      <Image
-        src="/Octocat.png"
-        alt="octocat"
-        id="octocat"
-        width={compact ? 86 : 60}
-        height={compact ? 86 : 60}
-      />
-    )}
-    <Image src="/GitHub_Logo_White.png" alt="github logo" width={60} height={60} />
+    <Image src="/images/GitHub_Logo_White.png" alt="github logo" fill style={{
+      objectFit: 'contain',
+      objectPosition: 'right'
+    }} />
+    <Image
+      src="/images/Octocat.png"
+      alt="octocat"
+      id="octocat" fill style={{
+        objectFit: 'contain',
+        objectPosition: 'left'
+      }} />
   </a>
 );
-
-GithubLink.propTypes = {
-  compact: PropTypes.bool,
-};
 
 export default GithubLink;

@@ -1,40 +1,35 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-// import styled from '@emotion/styled';
 import GithubLink from "@/components/GithubLink";
-
-// const Logo = styled.img`
-//   height: 30vmin;
-// `;
-
-// const LinkedInLink = styled.a`
-//   width: 20%;
-//   max-width: 130px;
-//   img {
-//     width: 100%;
-//   }
-// `;
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <header className="App-header">
-        {/* <Logo src={logo} alt="logo" /> */}
+        <div style={{ position: 'relative', width: '300px', height: '185px' }}>
+          <Image src="/images/logo.svg" alt="logo" fill style={{
+            objectFit: 'contain',
+            objectPosition: 'top'
+          }} />
+        </div>
       </header>
       <br />
       <p>Hello World!</p>
 
       <br />
-      <GithubLink showOctocat={true} />
+      <GithubLink />
       <br />
-      {/* <LinkedInLink
-        className="App-link"
+      <a
         href="https://www.linkedin.com/in/estebansantini/"
         target="_blank"
         rel="noopener noreferrer"
+        style={{ position: 'relative', width: '160px', height: '160px' }}
       >
-        <img src={linkedIn} alt="linkedIn logo" />
-      </LinkedInLink> */}
+        <Image src="/images/LI-Logo.png" alt="linkedIn logo" fill style={{
+          objectFit: 'contain',
+          objectPosition: 'top'
+        }} />
+      </a>
     </main>
   );
 }
