@@ -124,3 +124,16 @@ a:hover {
   display: flex;
   gap: 2rem;
 }
+.latestProjects {
+  margin-top: 2rem;
+}
+.readMoreSection {
+  position: relative;
+  max-height: 30px;
+  transition: max-height 1s ease;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.readMoreSection.display {
+  max-height: 400px;
+}
