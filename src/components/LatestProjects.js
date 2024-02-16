@@ -4,7 +4,7 @@ import ReadMoreRafin from './ReadMoreRafin';
 const LatestProjects = () => {
   return (
     <>
-      <h2 className="latestProjects">Latest Projects</h2>
+      <h2 className="latestProjectsTitle">Latest Projects</h2>
       <p style={{ marginBottom: '1rem', marginTop: '0.5rem' }}>
         These projects are personal hobbies and showcases of my technical exploration.
         For a comprehensive view of my professional achievements and experiences,

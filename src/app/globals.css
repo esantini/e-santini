@@ -87,6 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  padding: 6rem;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -94,6 +95,44 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* Smaller devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  body {
+    padding: 4rem; /* Reduce padding */
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  body {
+    padding: 2rem; /* Further reduce padding for small devices */
+  }
+  
+  .project .columnWrapper {
+    display: block;
+  }
+  .column {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  body {
+    padding-left: 12rem; /* Increase padding for large screens */
+    padding-right: 12rem;
+  }
+}
+
+/* Large devices (desktops, 1224px and up) */
+@media (min-width: 1224px) {
+  body {
+    padding-left: 17rem; /* Increase padding for large screens */
+    padding-right: 17rem;
+  }
+}
+
 
 a {
   color: inherit;
@@ -130,7 +169,7 @@ a:hover {
   display: flex;
   gap: 2rem;
 }
-.latestProjects {
+.latestProjectsTitle {
   margin-top: 2rem;
 }
 .readMoreSection {
