@@ -15,23 +15,18 @@ const ReadMoreRafin = () => {
       <div className="columnWrapper">
         <div className="column">
           <h4>About Website</h4>
-          Join Rafin, a tournament-winning fisherman, on a guided tour of Oviachic Lake's rich
-          bass habitats. With Rafin's expertise and <span class="highlight">'Amigo Style'</span>{' '}
-          hospitality, guests not only enjoy fishing but also become part of a community that
-          cherishes the great outdoors and the thrill of the catch. Many visitors find themselves
-          returning, lured back by the unforgettable experiences and the vibrant Facebook
-          group of enthusiastic anglers.
+          Embark on a journey with Rafin, a champion fisherman, as he guides you through the abundant
+          bass spots of Oviachic Lake. Experience his <span class="highlight">Amigo Style</span> hospitality,
+          which transforms fishing into a communal outdoor adventure, leaving guests eager to return.
+          The vibrant community of passionate anglers on Facebook further enriches the memorable experiences.
         </div>
         <div className="column">
           <h4>Building with Next.js</h4>
-          Crafted with <span class="highlight">Next.js</span> and <span class="highlight">React.js</span>,
-          Rafin Bass Fishing showcases responsive design and modern web technologies. Starting with
-          Next.js 11 and React 17, the site was a playground for learning—especially mastering the
-          new Image component in the upgrade to Next.js 14 and React 18. This upgrade brought
-          challenges but also opportunities to enhance performance, achieving over 90% in
-          Google's Lighthouse and leveraging Server Side Rendering for a seamless user experience.
-          Contacting Rafin is just a click away, thanks to an integrated 'Contact Us' feature powered
-          by mailgun.js.
+          Rafin Bass Fishing's website, built on <span class="highlight">Next.js</span>, showcases cutting-edge
+          responsive design and modern web technologies. Starting with earlier versions, the site evolved as a
+          learning platform, particularly with the adoption of Next.js 14, improving performance and achieving
+          over 95% scores in Google's Lighthouse. Enhancements include seamless user experiences through Server
+          Side Rendering and an easy 'Contact Us' feature, ensuring Rafin is just a click away.
         </div>
       </div>
 
