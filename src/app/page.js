@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import GithubLink from "@/components/GithubLink";
 import LatestProjects from "@/components/LatestProjects";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
@@ -40,19 +41,7 @@ export default function Home() {
 
       <LatestProjects />
       <br />
-      <GithubLink />
-      <br />
-      <a
-        href="https://www.linkedin.com/in/estebansantini/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ position: 'relative', width: '160px', height: '160px' }}
-      >
-        <Image src="/images/LI-Logo.png" alt="linkedIn logo" fill style={{
-          objectFit: 'contain',
-          objectPosition: 'top'
-        }} />
-      </a>
+      <SocialLinks />
     </main>
   );
 }
