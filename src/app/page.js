@@ -18,14 +18,15 @@ export default function Home() {
       </header>
       <br />
       <div className="intro">
-        <p>
-          Hello World! Welcome to my digital playground, where{' '}
+        <p className="highlight" style={{ fontSize: '1.3em' }}>Hello World!</p>
+        <p style={{ marginTop: '1rem' }}>
+          Welcome to my digital playground, where{' '}
           <span className="highlight">JavaScript</span>, <span className="highlight">React.js</span>,
           and <span className="highlight">Node.js</span> are the main attractions.
         </p>
         <br />
         <p>
-          I&apos;m Esteban, a <span className="highlight">front-end</span> maestro and{' '}
+          I&apos;m Esteban, a <span className="highlight">front-end</span> expert and{' '}
           <span className="highlight">back-end</span> enthusiast who loves turning complex problems
           into simple, elegant solutions. This site is my <span className="highlight">sandbox</span>,
           where I experiment, innovate, and occasionally break things (for science, of course!).

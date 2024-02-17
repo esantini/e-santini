@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useCallback } from 'react';
 
-const ReadMore = ({ maxHeight = 620, children }) => {
+const ReadMore = ({ maxHeight = 700, children }) => {
   const [isReadMore, setIsReadMore] = useState(false);
   const toggleReadMore = useCallback(
     () => setIsReadMore(v => !v),

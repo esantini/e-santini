@@ -8,9 +8,8 @@ const ProjectRaspberry = () => (
   <div className="project">
     <h3>Raspberry Pi</h3>
     <p>
-      Check out the Raspberry Pi project, this project was a fun way to
-      experiment with the Raspberry Pi and its GPIO pins, and to build a simple web interface
-      to control the lights in my apartment.
+      This project was a fun way to experiment with the Raspberry Pi and its GPIO pins,
+      and to build a simple web interface to control the lights in my apartment.
     </p>
     <br />
     <p>

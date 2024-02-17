@@ -122,6 +122,7 @@ body {
   body {
     padding-left: 12rem; /* Increase padding for large screens */
     padding-right: 12rem;
+    font-size: 1.2em;
   }
 }
 
@@ -187,6 +188,11 @@ a.highlight {
 }
 .latestProjectsTitle {
   margin-top: 2rem;
+}
+.projectsIntro {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .readMoreSection {
   position: relative;
