@@ -18,17 +18,17 @@ export default function Home() {
       </header>
       <br />
       <div className="intro">
-        <p className="highlight" style={{ fontSize: '1.3em' }}>Hello World!</p>
+        <h1 className="highlight" style={{ fontSize: '1.3em' }}>Hello World!</h1>
         <p style={{ marginTop: '1rem' }}>
           Welcome to my digital playground, where{' '}
-          <span className="highlight">JavaScript</span>, <span className="highlight">React.js</span>,
-          and <span className="highlight">Node.js</span> are the main attractions.
+          <strong className="highlight">JavaScript</strong>, <strong className="highlight">React.js</strong>,
+          and <strong className="highlight">Node.js</strong> are the main attractions.
         </p>
         <br />
         <p>
-          I&apos;m Esteban, a <span className="highlight">front-end</span> expert and{' '}
-          <span className="highlight">back-end</span> enthusiast who loves turning complex problems
-          into simple, elegant solutions. This site is my <span className="highlight">sandbox</span>,
+          I&apos;m Esteban, a <strong className="highlight">front-end</strong> expert and{' '}
+          <strong className="highlight">back-end</strong> enthusiast who loves turning complex problems
+          into simple, elegant solutions. This site is my <strong className="highlight">sandbox</strong>,
           where I experiment, innovate, and occasionally break things (for science, of course!).
         </p>
         <br />
@@ -38,7 +38,7 @@ export default function Home() {
           Feel free to connect with me
           on <ExternalLink href={MY_LINKEDIN_URL} className="highlight">LinkedIn</ExternalLink> too.
           {/* , or take a spin through my interactive resume—crafted
-          with love and <span className="highlight">D3.js</span>. */}
+          with love and <strong className="highlight">D3.js</strong>. */}
         </p>
         <br />
         <p>
@@ -51,7 +51,7 @@ export default function Home() {
       <LatestProjects />
       <br />
 
-      <h2>Thank you for your visit</h2>
+      <h1>Thank you for your visit</h1>
     </main>
   );
 }

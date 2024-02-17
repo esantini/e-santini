@@ -6,7 +6,7 @@ import { MY_GITHUB_URL } from "@/utils/constants";
 
 const ProjectRaspberry = () => (
   <div className="project">
-    <h3>Raspberry Pi</h3>
+    <h2>Raspberry Pi</h2>
     <p>
       This project was a fun way to experiment with the Raspberry Pi and its GPIO pins,
       and to build a simple web interface to control the lights in my apartment.
@@ -21,16 +21,16 @@ const ProjectRaspberry = () => (
         <div className="raspiText">
           <p>
             In this project I transformed my apartment into a tech playground. Hosting a previous version
-            of this site on a Raspberry Pi, shielded by <span className="highlight">Cloudflare</span>
-            {' '}and streamlined with <span className="highlight">NGINX</span>,
+            of this site on a Raspberry Pi, shielded by <strong className="highlight">Cloudflare</strong>
+            {' '}and streamlined with <strong className="highlight">NGINX</strong>,
             I ventured into electronics by controlling lights and screens via web interfaces.
           </p>
           <br />
           <p>
-            The project also included a homemade <span className="highlight">CI/CD</span> system,
-            using <span className="highlight">GitHub Actions</span> and <span className="highlight">Node.js</span> to
+            The project also included a homemade <strong className="highlight">CI/CD</strong> system,
+            using <strong className="highlight">GitHub Actions</strong> and <strong className="highlight">Node.js</strong> to
             deploy updates through bash scripts—clunky yet effective. Plus,
-            a <span className="highlight">live feed camera</span> added a personal touch.
+            a <strong className="highlight">live feed camera</strong> added a personal touch.
           </p>
           <br />
           <p>

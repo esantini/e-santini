@@ -152,11 +152,18 @@ a {
     color-scheme: dark;
   }
 }
-h2, h3 {
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.17em;
+}
+h1, h2 {
   color: #297325;
 }
-h4 {
+h3 {
   color: #194717;
+  font-size: 1em;
 }
 hr {
   border: 0;
