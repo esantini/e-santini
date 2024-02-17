@@ -99,14 +99,14 @@ body {
 /* Smaller devices (tablets, 768px and down) */
 @media (max-width: 768px) {
   body {
-    padding: 4rem; /* Reduce padding */
+    padding: 4rem;
   }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   body {
-    padding: 2rem; /* Further reduce padding for small devices */
+    padding: 2rem;
   }
   
   .project .columnWrapper {
@@ -120,7 +120,7 @@ body {
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
   body {
-    padding-left: 12rem; /* Increase padding for large screens */
+    padding-left: 12rem;
     padding-right: 12rem;
     font-size: 1.2em;
   }
@@ -129,8 +129,15 @@ body {
 /* Large devices (desktops, 1224px and up) */
 @media (min-width: 1224px) {
   body {
-    padding-left: 17rem; /* Increase padding for large screens */
+    padding-left: 17rem;
     padding-right: 17rem;
+    font-size: 1.5em;
+  }
+}
+/* Large devices (desktops, 1500px and up) */
+@media (min-width: 1500px) {
+  body {
+    font-size: 1.7em;
   }
 }
 
@@ -198,6 +205,7 @@ a.highlight {
   position: relative;
   transition: max-height 1s ease;
   overflow: hidden;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
@@ -208,40 +216,39 @@ a.highlight {
   border: none;
   background: none;
   height: 2rem;
-  font-size: medium;
+  font-size: 1em;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   color: #297325;
   cursor: pointer;
   text-shadow: 1px 1px 1px #424242;
 }
 
 .readMoreBtn:hover {
-  background: radial-gradient(center, rgba(208, 236, 213, 0.5) 50%, transparent 70%);
   color: #1c4e19;
 }
 .readMoreBtn::before, .readMoreBtn::after {
   content: '';
   position: absolute;
-  right: 36px;
+  right: 2.2em;
   border: solid #000;
-  border-width: 0 1.5px 1.5px 0;
+  border-width: 0 0.1em 0.1em 0;
   display: inline-block;
-  padding: 3px;
+  padding: 5px;
   transform: translateY(200%) rotate(45deg);
-  top: 12px;
+  top: 0.3em;
 }
 .readMoreBtn::after {
-  top: 8px;
+  top: 0;
 }
 .display .readMoreBtn::before, .display .readMoreBtn::after {
   transform: translateY(200%) rotate(-135deg);
-  top: 16px;
+  top: 0.4em;
 }
 .display .readMoreBtn::after {
-  top: 12px;
+  top: 0.7em;
 }
 
 .rafinBassLink {
@@ -258,6 +265,12 @@ a.highlight {
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+}
+/* Large devices (desktops, 1224px and up) */
+@media (min-width: 1224px) {
+  .socialLinks {
+    gap: 4rem;
+  }
 }
 
 .raspiContainer {

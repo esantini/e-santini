@@ -10,7 +10,7 @@ const ReadMore = ({ maxHeight = 700, children }) => {
   return (
     <div
       className={`readMoreSection ${isReadMore ? 'display' : ''}`}
-      style={{ maxHeight: isReadMore ? maxHeight : 80 }}
+      style={{ maxHeight: isReadMore ? maxHeight : 100 }}
     >
       <button
         className="readMoreBtn"
