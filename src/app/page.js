@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <header className="App-header">
         <div style={{ position: 'relative', width: '300px', height: '185px' }}>
-          <Image src="/images/logo.svg" alt="logo" fill style={{
+          <Image src="/images/logo.svg" alt="logo" fill priority style={{
             objectFit: 'contain',
             objectPosition: 'top'
           }} />
