@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import GithubLink from "@/components/GithubLink";
 import LatestProjects from "@/components/LatestProjects";
 import SocialLinks from "@/components/SocialLinks";
 
@@ -16,11 +15,11 @@ export default function Home() {
         </div>
       </header>
       <br />
-      <div class="intro">
+      <div className="intro">
         <p>
           Hello World! Welcome to my digital playground, where{' '}
-          <span class="highlight">JavaScript</span>, <span class="highlight">React.js</span>,
-          and <span class="highlight">Node.js</span> are the main attractions.
+          <span className="highlight">JavaScript</span>, <span className="highlight">React.js</span>,
+          and <span className="highlight">Node.js</span> are the main attractions.
         </p>
         <br />
         <p>
@@ -34,7 +33,7 @@ export default function Home() {
           {' '}for a peek at my latest projects, connect with me on{' '}
           <a href="https://www.linkedin.com/in/estebansantini/">LinkedIn</a>,
           or take a spin through my interactive resume—crafted with love and{' '}
-          <span class="highlight">D3.js</span>.
+          <span className="highlight">D3.js</span>.
           Let's explore what happens when creativity meets code!
         </p>
       </div>

@@ -1,13 +1,20 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
-const ReadMore = ({ children }) => {
+const ReadMore = ({ maxHeight = 620, children }) => {
   const [isReadMore, setIsReadMore] = useState(false);
+  const toggleReadMore = useCallback(
+    () => setIsReadMore(v => !v),
+    [setIsReadMore],
+  );
   return (
-    <div className={`readMoreSection ${isReadMore ? 'display' : ''}`}>
+    <div
+      className={`readMoreSection ${isReadMore ? 'display' : ''}`}
+      style={{ maxHeight: isReadMore ? maxHeight : 80 }}
+    >
       <button
         className="readMoreBtn"
-        onClick={() => setIsReadMore(v => !v)}
+        onClick={toggleReadMore}
       >
         {isReadMore ? 'Read Less' : 'Read More'}
       </button>

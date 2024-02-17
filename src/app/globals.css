@@ -96,7 +96,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* Smaller devices (tablets, 768px and up) */
+/* Smaller devices (tablets, 768px and down) */
 @media (max-width: 768px) {
   body {
     padding: 4rem; /* Reduce padding */
@@ -144,19 +144,23 @@ a {
     color-scheme: dark;
   }
 }
-.intro {
-  color: #333;
-  text-align: center;
-}
-.highlight {
-  color: #297325;
-  font-weight: bold;
-}
 h2, h3 {
   color: #297325;
 }
 h4 {
   color: #194717;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image:
+    linear-gradient(to right,
+    rgba(0, 0, 0, 0),
+    rgb(107 107 107 / 75%),
+    rgba(0, 0, 0, 0)
+    );
+  margin: 20px 0;
+  width: 90%;
 }
 a {
   color: #0094ce;
@@ -164,6 +168,14 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.intro {
+  color: #333;
+  text-align: center;
+}
+.highlight {
+  color: #297325;
+  font-weight: bold;
 }
 .columnWrapper {
   display: flex;
@@ -174,15 +186,12 @@ a:hover {
 }
 .readMoreSection {
   position: relative;
-  max-height: 80px;
   transition: max-height 1s ease;
   overflow: hidden;
   margin-bottom: 2rem;
   mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
 .readMoreSection.display {
-  max-height: 800px;
-  /* mask-image: none; */
   mask-image: none;
 }
 .readMoreBtn {
@@ -231,6 +240,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 1rem;
+  text-align: center;
 }
 
 .socialLinks {
@@ -238,4 +248,31 @@ a:hover {
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+.raspiContainer {
+  position: relative;
+  display: flex;
+}
+.raspiText {
+  width: 60%;
+}
+.raspiSideImage {
+  position: relative;
+  width: 40%;
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .raspiContainer {
+    flex-direction: column;
+  }
+  .raspiText {
+    width: 100%;
+  }
+  .raspiSideImage {
+    width: 100%;
+    height: 18rem;
+    margin-top: 1rem;
+  }
 }
