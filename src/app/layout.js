@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "e-Santini Web App",
-  description: "Just my personal little sandbox web app",
+  description: "My portfolio: a showcase of innovative web projects using React.js, Next.js, Node.js and Raspberry Pi. Connect and explore the blend of technology and creativity.",
 };
 
 export default function RootLayout({ children }) {

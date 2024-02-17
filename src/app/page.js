@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import LatestProjects from "@/components/LatestProjects";
 import SocialLinks from "@/components/SocialLinks";
+import ExternalLink from "@/components/ExternalLink";
+import { MY_GITHUB_URL, MY_LINKEDIN_URL } from "@/utils/constants";
 
 export default function Home() {
   return (
@@ -23,24 +25,32 @@ export default function Home() {
         </p>
         <br />
         <p>
-          I'm Esteban, a front-end maestro and back-end enthusiast who loves turning
-          complex problems into simple, elegant solutions. This site is my sandbox,
+          I&apos;m Esteban, a <span className="highlight">front-end</span> maestro and{' '}
+          <span className="highlight">back-end</span> enthusiast who loves turning complex problems
+          into simple, elegant solutions. This site is my <span className="highlight">sandbox</span>,
           where I experiment, innovate, and occasionally break things (for science, of course!).
         </p>
         <br />
         <p>
-          Dive into my world by checking out my <a href="https://github.com/esantini">GitHub</a>
-          {' '}for a peek at my latest projects, connect with me on{' '}
-          <a href="https://www.linkedin.com/in/estebansantini/">LinkedIn</a>,
-          or take a spin through my interactive resume—crafted with love and{' '}
-          <span className="highlight">D3.js</span>.
-          Let's explore what happens when creativity meets code!
+          Dive into my world by exploring my latest projects below, or take a closer look under the hood on
+          my <ExternalLink href={MY_GITHUB_URL} className="highlight">GitHub</ExternalLink> profile.
+          Feel free to connect with me
+          on <ExternalLink href={MY_LINKEDIN_URL} className="highlight">LinkedIn</ExternalLink> too.
+          {/* , or take a spin through my interactive resume—crafted
+          with love and <span className="highlight">D3.js</span>. */}
+        </p>
+        <br />
+        <p>
+          Let&apos;s explore what happens when creativity meets code!
         </p>
       </div>
 
+      <SocialLinks />
+
       <LatestProjects />
       <br />
-      <SocialLinks />
+
+      <h2>Thank you for your visit</h2>
     </main>
   );
 }

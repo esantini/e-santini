@@ -177,6 +177,10 @@ a:hover {
   color: #297325;
   font-weight: bold;
 }
+a.highlight {
+  color: #2b8a26;
+}
+
 .columnWrapper {
   display: flex;
   gap: 2rem;
