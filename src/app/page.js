@@ -18,7 +18,7 @@ export default function Home() {
       </header>
       <br />
       <div className="intro">
-        <h1 className="highlight" style={{ fontSize: '1.3em' }}>Hello World!</h1>
+        <h1 style={{ fontSize: '1.3em' }}>Hello World!</h1>
         <p style={{ marginTop: '1rem' }}>
           Welcome to my digital playground, where{' '}
           <strong className="highlight">JavaScript</strong>, <strong className="highlight">React.js</strong>,

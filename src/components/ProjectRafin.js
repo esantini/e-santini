@@ -11,14 +11,14 @@ const ProjectRafin = () => (
       Check out the <ExternalLink href={RAFIN_URL}>Rafin Bass Fishing</ExternalLink> site,
       this project was the perfect excuse to dive into <strong className="highlight">Next.js</strong>,
       a framework that had just surged in popularity. It blends my newfound skills with the excitement
-      of <strong className="highlight">Amigo Style</strong> fishing at Oviachic Lake.
+      of <i>&apos;Amigo Style&apos;</i> fishing at Oviachic Lake.
     </p>
-    <ReadMore maxHeight={800}>
+    <ReadMore maxHeight={820}>
       <div className="columnWrapper">
         <div className="column">
           <h3>About Rafin&apos;s Website</h3>
           Embark on a journey with Rafin, a champion fisherman, as he guides you through the abundant
-          bass spots of Oviachic Lake. Experience his <strong className="highlight">Amigo Style</strong> hospitality,
+          bass spots of Oviachic Lake. Experience his <i>&apos;Amigo Style&apos;</i> hospitality,
           which transforms fishing into a communal outdoor adventure, leaving guests eager to return.
           The vibrant community of passionate anglers on Facebook further enriches the memorable experiences.
         </div>
@@ -34,7 +34,7 @@ const ProjectRafin = () => (
       </div>
 
       <div className="rafinBassLink">
-        <p style={{ marginBottom: 5 }}>
+        <p>
           Ready for your adventure? Visit Rafin Bass Fishing to start your journey
         </p>
         <div style={{ position: 'relative', height: 150 }}>
@@ -45,7 +45,7 @@ const ProjectRafin = () => (
               fill
               style={{
                 objectFit: 'contain',
-                objectPosition: 'top'
+                objectPosition: 'top',
               }}
             />
           </ExternalLink>

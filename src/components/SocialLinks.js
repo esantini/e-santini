@@ -39,6 +39,7 @@ const SocialLinks = () => (
         marginTop: '.8rem',
       }}
     >
+      {/* <Image src="/images/Linkedin-logo-white.png.png" alt="linkedIn logo" fill style={{ */}
       <Image src="/images/LI-Logo.png" alt="linkedIn logo" fill style={{
         objectFit: 'contain',
         objectPosition: 'top'
