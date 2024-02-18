@@ -279,6 +279,7 @@ a:hover {
   min-height: 300px;
   margin-top: .5rem;
   padding-bottom: 1rem;
+  margin-right: 0.3em;
 }
 .raspiSideImage img {
   border-radius: 15px;
