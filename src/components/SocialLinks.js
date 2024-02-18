@@ -12,13 +12,15 @@ const SocialLinks = () => (
       style={{ position: 'relative', width: '200px', height: '60px' }}
     >
       <Image
-        src="/images/GitHub_Logo_White.png"
+        src="/images/GitHub_Logo_Black.png"
+        id="github-logo"
         alt="github logo"
         fill
         style={{
           objectFit: 'contain',
           objectPosition: 'right'
-        }} />
+        }}
+      />
       <Image
         src="/images/Octocat.png"
         alt="octocat"
@@ -27,7 +29,8 @@ const SocialLinks = () => (
         style={{
           objectFit: 'contain',
           objectPosition: 'left'
-        }} />
+        }}
+      />
     </ExternalLink>
 
     {/* LinkedIn */}

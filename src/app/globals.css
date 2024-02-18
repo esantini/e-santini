@@ -307,3 +307,8 @@ a:hover {
     margin-right: 0;
   }
 }
+
+#github-logo {
+  height: 60% !important;
+  top: 0.6em !important;
+}
