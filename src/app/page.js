@@ -51,7 +51,7 @@ export default function Home() {
       <LatestProjects />
       <br />
 
-      <h1>Thank you for your visit</h1>
+      <h1 className="thank-you">Thank you for your visit</h1>
     </main>
   );
 }

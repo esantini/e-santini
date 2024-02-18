@@ -5,20 +5,22 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --font-color: #588157; /* Font Color */
-  --background-start: #ffffff;
-  --background-end: #e3e7db;
+  --font-color: #ffffff; /* Font Color */
+  --background-start: #011627;
+  --background-end: #2EC4B6;
 
-  --h1-color: #588157;
-  --h2-color: #7da87c;
-  --h3-color: #A3B18A;
+  --h1-color: #FF9F1C;
+  --h2-color: #FF9F1C;
+  --h3-color: #FF9F1C;
 
-  --a-color: #344E41;
-  --highlight-color: #5a8871;
-  --light-highlight-color: #3A5A40;
+  --thank-you-color: #ffca81;
 
-  --read-more-color: #A3B18A;
-  --read-more-hover-color: #588157;
+  --a-color: #52baeb;
+  --highlight-color: #ffda60;
+  --light-highlight-color: #52baeb;
+
+  --read-more-color: #ffda60;
+  --read-more-hover-color: #FF9F1C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -111,6 +113,7 @@ a {
 }
 h1 {
   color: var(--h1-color);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
   font-size: 1.5em;
 }
 h2 {
@@ -311,4 +314,8 @@ a:hover {
 #github-logo {
   height: 60% !important;
   top: 0.6em !important;
+}
+
+.thank-you {
+  color: var(--thank-you-color);
 }
