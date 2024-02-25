@@ -16,9 +16,9 @@ const LatestProjects = () => (
       visit my <ExternalLink href={MY_LINKEDIN_URL} >LinkedIn</ExternalLink> profile.
     </p>
     <hr />
-    <ProjectRafin />
-    <hr />
     <ProjectRaspberry />
+    <hr />
+    <ProjectRafin />
     <hr />
   </>
 );
