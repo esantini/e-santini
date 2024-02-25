@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import LatestProjects from "@/components/LatestProjects";
 import SocialLinks from "@/components/SocialLinks";
 import ExternalLink from "@/components/ExternalLink";
+import ProxySample from "@/components/ProxySample";
 import { MY_GITHUB_URL, MY_LINKEDIN_URL } from "@/utils/constants";
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
       </header>
       <br />
       <div className="intro">
-        <h1 style={{ fontSize: '1.3em' }}>Hello World!</h1>
+        {/* update global variable reactive.name to see "Hello World!" change */}
+        {/* #intro_name is updated in update_html_with_Proxy.js showcasing how Proxy works */}
+        <h1 style={{ fontSize: '1.3em' }}>Hello <span id="intro_name" />!</h1>
         <p style={{ marginTop: '1rem' }}>
           Welcome to my digital playground, where{' '}
           <strong className="highlight">JavaScript</strong>, <strong className="highlight">React.js</strong>,
@@ -52,6 +55,7 @@ export default function Home() {
       <br />
 
       <h1>Thank you for your visit</h1>
+      <ProxySample />
     </main>
   );
 }
