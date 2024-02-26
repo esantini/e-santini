@@ -11,12 +11,15 @@ const ProxySample = () => {
     window.reactive = reactive;
     window.fontSizes = fontSizes;
 
-    const word = 'World';
-    for (let i = 0; i < word.length; i++) {
-      setTimeout(() => {
-        window.reactive.name = word.slice(0, i + 1);
-      }, 100 * i);
-    }
+    setTimeout(() => {
+      reactive.name = '';
+      const word = 'World';
+      for (let i = 0; i < word.length; i++) {
+        setTimeout(() => {
+          reactive.name = word.slice(0, i + 1);
+        }, 100 * i);
+      }
+    }, 1000);
 
   }, []);
   return <>{/* TODO input field that updates reactive object */}</>;

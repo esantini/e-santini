@@ -21,7 +21,7 @@ export default function Home() {
       <div className="intro">
         {/* update global variable reactive.name to see "Hello World!" change */}
         {/* #intro_name is updated in update_html_with_Proxy.js showcasing how Proxy works */}
-        <h1 style={{ fontSize: '1.3em' }}>Hello <span id="intro_name" />!</h1>
+        <h1 style={{ fontSize: '1.3em' }}>Hello <span id="intro_name">World</span>!</h1>
         <p style={{ marginTop: '1rem' }}>
           Welcome to my digital playground, where{' '}
           <strong className="highlight">JavaScript</strong>, <strong className="highlight">React.js</strong>,
